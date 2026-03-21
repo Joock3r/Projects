@@ -180,6 +180,47 @@
     .card:nth-child(8) { animation-delay: 0.8s; }
     .card:nth-child(9) { animation-delay: 0.9s; }
 
+    /* ── Section headings ── */
+    .section { margin-bottom: 48px; }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .section-icon {
+      font-size: 1.3rem;
+      width: 40px;
+      height: 40px;
+      background: var(--accent2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-main);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1.5px;
+      background: var(--border);
+      border-radius: 2px;
+    }
+
+    .section:nth-of-type(1) .section-header { animation-delay: 0.05s; }
+    .section:nth-of-type(2) .section-header { animation-delay: 0.35s; }
+
     /* ── Footer ── */
     footer {
       margin-top: 64px;
@@ -220,62 +261,108 @@
          card-title = שם הפרויקט
          card-desc  = תיאור קצר
   ════════════════════════════════════════════════════════════ -->
-  <div class="grid">
 
-    <a class="card" href="https://joock3r.github.io/Flags/" target="_blank" style="--card-accent:#e74c3c">
-      <span class="card-emoji">🌍</span>
-      <span class="card-title">Flags</span>
-      <p class="card-desc">משחק ניחוש דגלים של מדינות העולם</p>
-      <span class="card-arrow">↗</span>
-    </a>
+  <!-- ═══ קטגוריה: כלים ═══ -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon">🛠️</div>
+      <span class="section-title">כלים</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="grid">
 
-    <a class="card" href="https://joock3r.github.io/ShoppingList/" target="_blank" style="--card-accent:#27ae60">
-      <span class="card-emoji">🛒</span>
-      <span class="card-title">Shopping List</span>
-      <p class="card-desc">רשימת קניות חכמה ונוחה לשימוש</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/ShoppingList/" target="_blank" style="--card-accent:#27ae60">
+        <span class="card-emoji">🛒</span>
+        <span class="card-title">Shopping List</span>
+        <p class="card-desc">רשימת קניות חכמה ונוחה לשימוש</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    <a class="card" href="https://joock3r.github.io/WhatsApp/" target="_blank" style="--card-accent:#25d366">
-      <span class="card-emoji">💬</span>
-      <span class="card-title">WhatsApp Tool</span>
-      <p class="card-desc">כלי שימושי לוואטסאפ</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/WhatsApp/" target="_blank" style="--card-accent:#25d366">
+        <span class="card-emoji">💬</span>
+        <span class="card-title">WhatsApp Tool</span>
+        <p class="card-desc">כלי שימושי לוואטסאפ</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    <a class="card" href="https://joock3r.github.io/CookBook/" target="_blank" style="--card-accent:#f39c12">
-      <span class="card-emoji">🍳</span>
-      <span class="card-title">CookBook</span>
-      <p class="card-desc">מתכונים וכלי בישול במקום אחד</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/CookBook/" target="_blank" style="--card-accent:#f39c12">
+        <span class="card-emoji">🍳</span>
+        <span class="card-title">CookBook</span>
+        <p class="card-desc">מתכונים וכלי בישול במקום אחד</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    <a class="card" href="https://joock3r.github.io/BurgeRate/" target="_blank" style="--card-accent:#e67e22">
-      <span class="card-emoji">🍔</span>
-      <span class="card-title">BurgeRate</span>
-      <p class="card-desc">דרג ושתף את ההמבורגרים הטובים ביותר</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/BurgeRate/" target="_blank" style="--card-accent:#e67e22">
+        <span class="card-emoji">🍔</span>
+        <span class="card-title">BurgeRate</span>
+        <p class="card-desc">דרג ושתף את ההמבורגרים הטובים ביותר</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    <a class="card" href="https://joock3r.github.io/Tournament/" target="_blank" style="--card-accent:#8e44ad">
-      <span class="card-emoji">🏆</span>
-      <span class="card-title">World Cup 2026</span>
-      <p class="card-desc">טורניר מונדיאל 2026 – מעקב ותוצאות</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/Tournament/" target="_blank" style="--card-accent:#8e44ad">
+        <span class="card-emoji">🏆</span>
+        <span class="card-title">World Cup 2026</span>
+        <p class="card-desc">טורניר מונדיאל 2026 – מעקב ותוצאות</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    <!-- ══ להוספת פרויקט חדש: העתק את הבלוק הבא ושנה את הערכים ══
+      <!-- ══ כלי חדש: העתק כאן ══
 
-    <a class="card" href="https://joock3r.github.io/PROJECT_NAME/" target="_blank" style="--card-accent:#3498db">
-      <span class="card-emoji">🔧</span>
-      <span class="card-title">שם הפרויקט</span>
-      <p class="card-desc">תיאור קצר של הפרויקט</p>
-      <span class="card-arrow">↗</span>
-    </a>
+      <a class="card" href="https://joock3r.github.io/PROJECT_NAME/" target="_blank" style="--card-accent:#3498db">
+        <span class="card-emoji">🔧</span>
+        <span class="card-title">שם הפרויקט</span>
+        <p class="card-desc">תיאור קצר של הפרויקט</p>
+        <span class="card-arrow">↗</span>
+      </a>
 
-    ════════════════════════════════════════════════════════════ -->
+      ════════════════════════════════════════════════════════════ -->
 
-  </div>
+    </div>
+  </section>
+
+  <!-- ═══ קטגוריה: משחקים ═══ -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-icon">🎮</div>
+      <span class="section-title">משחקים</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="grid">
+
+      <a class="card" href="https://joock3r.github.io/Flags/" target="_blank" style="--card-accent:#e74c3c">
+        <span class="card-emoji">🌍</span>
+        <span class="card-title">Flags</span>
+        <p class="card-desc">משחק ניחוש דגלים של מדינות העולם</p>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      <a class="card" href="https://joock3r.github.io/Countries/" target="_blank" style="--card-accent:#2980b9">
+        <span class="card-emoji">🗺️</span>
+        <span class="card-title">Countries</span>
+        <p class="card-desc">משחק ידע על מדינות העולם</p>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      <a class="card" href="https://joock3r.github.io/LanDistance/" target="_blank" style="--card-accent:#16a085">
+        <span class="card-emoji">📏</span>
+        <span class="card-title">LanDistance</span>
+        <p class="card-desc">נחש את המרחק בין מדינות</p>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      <!-- ══ משחק חדש: העתק כאן ══
+
+      <a class="card" href="https://joock3r.github.io/PROJECT_NAME/" target="_blank" style="--card-accent:#e74c3c">
+        <span class="card-emoji">🎯</span>
+        <span class="card-title">שם המשחק</span>
+        <p class="card-desc">תיאור קצר של המשחק</p>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      ════════════════════════════════════════════════════════════ -->
+
+    </div>
+  </section>
 
   <footer>joock3r · GitHub Pages</footer>
 
